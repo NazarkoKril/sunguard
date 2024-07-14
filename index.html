@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Freeman&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>SunGuard</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__container">
+                <div class="h__left">
+                    <img loading="lazy" src="./img/logo.jpg" alt="photo">
+                </div>
+                <nav class="h__center">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="./index.html" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./about-us.html" class="header__link">About us</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./services.html" class="header__link">Services</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./blog.html" class="header__link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="h__right">
+                    <ul class="h__social_list">
+                        <li class="h__social_item">
+                            <a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer" class="twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21"
+                                    fill="none">
+                                    <path
+                                        d="M17.3246 0H20.6997L13.3281 8.49163L22 20.0483H15.2116L9.89092 13.0411L3.81008 20.0483H0.430248L8.31334 10.9639L0 0H6.96045L11.7649 6.40487L17.3246 0ZM16.1391 18.0146H18.0083L5.9422 1.92772H3.93438L16.1391 18.0146Z"
+                                        fill="#EBF0FF" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="h__social_item">
+                            <a href="https://www.instagram.com/ " target="_blank" rel="noopener noreferrer"
+                                class="instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25"
+                                    fill="none">
+                                    <path
+                                        d="M11.5026 5.91225C8.23921 5.91225 5.60697 8.69034 5.60697 12.1345C5.60697 15.5787 8.23921 18.3568 11.5026 18.3568C14.7659 18.3568 17.3982 15.5787 17.3982 12.1345C17.3982 8.69034 14.7659 5.91225 11.5026 5.91225ZM11.5026 16.1798C9.3937 16.1798 7.66966 14.3657 7.66966 12.1345C7.66966 9.90338 9.38857 8.08923 11.5026 8.08923C13.6166 8.08923 15.3355 9.90338 15.3355 12.1345C15.3355 14.3657 13.6114 16.1798 11.5026 16.1798ZM19.0144 5.65772C19.0144 6.46461 18.3987 7.10905 17.6393 7.10905C16.8748 7.10905 16.2642 6.4592 16.2642 5.65772C16.2642 4.85625 16.8799 4.2064 17.6393 4.2064C18.3987 4.2064 19.0144 4.85625 19.0144 5.65772ZM22.9192 7.13071C22.832 5.18658 22.4112 3.46449 21.0617 2.04566C19.7174 0.626831 18.0857 0.182769 16.2437 0.0852923C14.3452 -0.0284308 8.65482 -0.0284308 6.75633 0.0852923C4.91941 0.177354 3.28773 0.621415 1.93826 2.04025C0.58879 3.45908 0.173173 5.18117 0.0808143 7.12529C-0.0269381 9.12898 -0.0269381 15.1346 0.0808143 17.1383C0.168042 19.0825 0.58879 20.8046 1.93826 22.2234C3.28773 23.6422 4.91428 24.0863 6.75633 24.1838C8.65482 24.2975 14.3452 24.2975 16.2437 24.1838C18.0857 24.0917 19.7174 23.6476 21.0617 22.2234C22.4061 20.8046 22.8268 19.0825 22.9192 17.1383C23.0269 15.1346 23.0269 9.1344 22.9192 7.13071ZM20.4665 19.2882C20.0663 20.3497 19.2915 21.1674 18.2807 21.5952C16.767 22.2288 13.1753 22.0826 11.5026 22.0826C9.82984 22.0826 6.23296 22.2234 4.72443 21.5952C3.71874 21.1728 2.94395 20.3551 2.53859 19.2882C1.93826 17.6907 2.0768 13.8999 2.0768 12.1345C2.0768 10.3691 1.94339 6.57292 2.53859 4.9808C2.93882 3.91938 3.71361 3.10166 4.72443 2.67385C6.23809 2.04025 9.82984 2.18646 11.5026 2.18646C13.1753 2.18646 16.7722 2.04566 18.2807 2.67385C19.2864 3.09625 20.0612 3.91397 20.4665 4.9808C21.0669 6.57834 20.9283 10.3691 20.9283 12.1345C20.9283 13.8999 21.0669 17.6961 20.4665 19.2882Z"
+                                        fill="#EBF0FF" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="h__social_item">
+                            <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer"
+                                class="facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path
+                                        d="M19.6758 0.266994H4.49461C2.355 0.266994 0.614361 2.10368 0.614361 4.36133V20.3801C0.614361 22.6378 2.355 24.4745 4.49461 24.4745H19.6758C21.8154 24.4745 23.556 22.6378 23.556 20.3801V4.36133C23.556 2.10368 21.8154 0.266994 19.6758 0.266994ZM22.2065 20.3801C22.2065 21.8526 21.0713 23.0505 19.6758 23.0505H4.49461C3.09912 23.0505 1.96387 21.8526 1.96387 20.3801V4.36133C1.96387 2.88885 3.09912 1.69096 4.49461 1.69096H19.6758C21.0713 1.69096 22.2065 2.88885 22.2065 4.36133V20.3801Z"
+                                        fill="#EBF0FF" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.361328 4.36133C0.361328 1.95622 2.21526 0 4.49461 0H19.6758C21.9551 0 23.8091 1.95622 23.8091 4.36133V20.3801C23.8091 22.7852 21.9551 24.7415 19.6758 24.7415H4.49461C2.21526 24.7415 0.361328 22.7852 0.361328 20.3801V4.36133ZM4.49461 0.533989C2.49475 0.533989 0.867394 2.25113 0.867394 4.36133V20.3801C0.867394 22.4903 2.49475 24.2075 4.49461 24.2075H19.6758C21.6756 24.2075 23.303 22.4903 23.303 20.3801V4.36133C23.303 2.25113 21.6756 0.533989 19.6758 0.533989H4.49461ZM4.49461 1.95796C3.23887 1.95796 2.2169 3.03631 2.2169 4.36133V20.3801C2.2169 21.7052 3.23887 22.7835 4.49461 22.7835H19.6758C20.9315 22.7835 21.9535 21.7052 21.9535 20.3801V4.36133C21.9535 3.03631 20.9315 1.95796 19.6758 1.95796H4.49461ZM1.71084 4.36133C1.71084 2.7414 2.95938 1.42397 4.49461 1.42397H19.6758C21.211 1.42397 22.4595 2.7414 22.4595 4.36133V20.3801C22.4595 22.0001 21.211 23.3175 19.6758 23.3175H4.49461C2.95938 23.3175 1.71084 22.0001 1.71084 20.3801V4.36133Z"
+                                        fill="#EBF0FF" />
+                                    <path
+                                        d="M16.4414 3.2301H14.3785C11.5115 3.2301 9.17904 5.96468 9.17904 9.32602V9.89366H7.60026C7.2515 9.89366 6.96875 10.2252 6.96875 10.6341V13.5956C6.96875 14.0045 7.2515 14.336 7.60026 14.336H9.17904V20.2592C9.17904 20.6681 9.46179 20.9996 9.81055 20.9996H12.3366C12.6854 20.9996 12.9681 20.6681 12.9681 20.2592V14.336H15.1784C15.5272 14.336 15.8099 14.0045 15.8099 13.5956V10.6341C15.8099 10.2252 15.5272 9.89366 15.1784 9.89366H12.9681V9.32602C12.9681 8.41425 13.6008 7.67247 14.3785 7.67247H16.4414C16.7902 7.67247 17.0729 7.34097 17.0729 6.93208V3.9705C17.0729 3.5616 16.7902 3.2301 16.4414 3.2301ZM15.8099 6.19168H14.3785C12.9044 6.19168 11.7051 7.59774 11.7051 9.32602V10.6341C11.7051 11.0429 11.9878 11.3744 12.3366 11.3744H14.5469V12.8552H12.3366C11.9878 12.8552 11.7051 13.1867 11.7051 13.5956V19.5188H10.4421V13.5956C10.4421 13.1867 10.1593 12.8552 9.81055 12.8552H8.23177V11.3744H9.81055C10.1593 11.3744 10.4421 11.0429 10.4421 10.6341V9.32602C10.4421 6.78123 12.2079 4.71089 14.3785 4.71089H15.8099V6.19168Z"
+                                        fill="#EBF0FF" />
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero__section">
+            <div class="container">
+                <div class="hero__container">
+                    <p class="hero__uptitle">Lorem ipsum dolor sit amet.</p>
+                    <h2 class="hero__title">Window Tinting<span> veritatis et quasi architecto beatae</span></h2>
+                    <p class="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+                </div>
+            </div>
+        </section>
+        <section class="services__section">
+            <div class="serv__cont"><img class="serv__img" src="./img/serv__section.jpg" alt="photo" loading="lazy">
+            </div>
+            <div class="container">
+                <div class="section__serv_container">
+                    <h3 class="section__serv_title">Sed ut perspiciatis unde omnis iste natus error?</h3>
+                    <p class="section__serv_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.</p>
+                    <a href="#order" class="order__btn"><span></span>order</a>
+                </div>
+            </div>
+            <ul class="serv__card_list">
+                <li class="serv__card_item">
+                    <h3 class="serv__card_title">Car Tinting</h3>
+                    <p class="serv__card_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam,
+                        eaque</p>
+                    <a href="#order" class="order__btn"><span></span>order</a>
+                </li>
+                <li class="serv__card_item">
+                    <h3 class="serv__card_title">Residential</h3>
+                    <p class="serv__card_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam,
+                        eaque</p>
+                    <a href="#order" class="order__btn"><span></span>order</a>
+                </li>
+                <li class="serv__card_item">
+                    <h3 class="serv__card_title">Commercial Tinting</h3>
+                    <p class="serv__card_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam,
+                        eaque</p>
+                    <a href="#order" class="order__btn"><span></span>order</a>
+                </li>
+            </ul>
+
+        </section>
+        <section class="our_works__section">
+            <div class="our_work__cont">
+                <div class="container1">
+                    <h3 class="our_work__title">Our works</h3>
+                    <p class="our_work__subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.</p>
+                    <a href="#">Watch more</a>
+                </div>
+                <div class="swiper swiper__portf">
+                    <div class="swiper-wrapper swiper__wrapper_portf">
+                        <div class="swiper-slide portf__slide">
+                            <img loading="lazy" src="./img/works1.jpg" alt="photo">
+                        </div>
+                        <div class="swiper-slide portf__slide">
+                            <img loading="lazy" src="./img/works2.jpg" alt="photo">
+                        </div>
+                        <div class="swiper-slide portf__slide">
+                            <img loading="lazy" src="./img/works3.jpg" alt="photo">
+                        </div>
+                        <div class="swiper-slide portf__slide">
+                            <img loading="lazy" src="./img/works1.jpg" alt="photo">
+                        </div>
+                        <div class="swiper-slide portf__slide">
+                            <img loading="lazy" src="./img/works2.jpg" alt="photo">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev portf__prev"></div>
+                    <div class="swiper-button-next portf__next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="total__section">
+            <div class="container">
+                <ul class="total__list">
+                    <li class="total__item">
+                        <h3 class="total__number">100+</h3>
+                        <p class="total__title">Sed ut perspiciatis
+                            gjsoreto</p>
+                    </li>
+                    <li class="total__item">
+                        <h3 class="total__number">100+</h3>
+                        <p class="total__title">Sed ut perspiciatis
+                            gjsoreto</p>
+                    </li>
+                    <li class="total__item">
+                        <h3 class="total__number">100+</h3>
+                        <p class="total__title">Sed ut perspiciatis
+                            gjsoreto</p>
+                    </li>
+                    <li class="total__item">
+                        <h3 class="total__number">100+</h3>
+                        <p class="total__title">Sed ut perspiciatis
+                            gjsoreto</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="faq__section">
+            <div class="container faq__cont">
+                <div class="faq__left">
+                    <h3 class="faq__title">
+                        Frequently asked questions
+                    </h3>
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <div class="faq__question">
+                                Frequently asked questions
+                                <span class="toggle-icon">
+                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="26"
+                                        viewBox="0 0 25 26" fill="none">
+                                        <path
+                                            d="M14.3789 0V11.1915H25V14.7298H14.3789V26H10.5689V14.7298H0V11.1915H10.5689V0H14.3789Z"
+                                            fill="#0E338B" />
+                                    </svg>
+                                    <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="4"
+                                        viewBox="0 0 25 4" fill="none" style="display: none;">
+                                        <path d="M25 0.230957H14.3789H0V3.76927H14.3789H25V0.230957Z" fill="#0E338B" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="faq__answer" style="display:none;">Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                eaque. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque laudantium, totam rem
+                                aperiam, eaque</div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">
+                                Frequently asked questions
+                                <span class="toggle-icon">
+                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="26"
+                                        viewBox="0 0 25 26" fill="none">
+                                        <path
+                                            d="M14.3789 0V11.1915H25V14.7298H14.3789V26H10.5689V14.7298H0V11.1915H10.5689V0H14.3789Z"
+                                            fill="#0E338B" />
+                                    </svg>
+                                    <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="4"
+                                        viewBox="0 0 25 4" fill="none" style="display: none;">
+                                        <path d="M25 0.230957H14.3789H0V3.76927H14.3789H25V0.230957Z" fill="#0E338B" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="faq__answer" style="display:none;">Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                eaque. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque laudantium, totam rem
+                                aperiam, eaque</div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">
+                                Frequently asked questions
+                                <span class="toggle-icon">
+                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="26"
+                                        viewBox="0 0 25 26" fill="none">
+                                        <path
+                                            d="M14.3789 0V11.1915H25V14.7298H14.3789V26H10.5689V14.7298H0V11.1915H10.5689V0H14.3789Z"
+                                            fill="#0E338B" />
+                                    </svg>
+                                    <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="4"
+                                        viewBox="0 0 25 4" fill="none" style="display: none;">
+                                        <path d="M25 0.230957H14.3789H0V3.76927H14.3789H25V0.230957Z" fill="#0E338B" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="faq__answer" style="display:none;">Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam,
+                                eaque. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque laudantium, totam
+                                rem
+                                aperiam, eaque</div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">
+                                Frequently asked questions
+                                <span class="toggle-icon">
+                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="26"
+                                        viewBox="0 0 25 26" fill="none">
+                                        <path
+                                            d="M14.3789 0V11.1915H25V14.7298H14.3789V26H10.5689V14.7298H0V11.1915H10.5689V0H14.3789Z"
+                                            fill="#0E338B" />
+                                    </svg>
+                                    <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="4"
+                                        viewBox="0 0 25 4" fill="none" style="display: none;">
+                                        <path d="M25 0.230957H14.3789H0V3.76927H14.3789H25V0.230957Z" fill="#0E338B" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="faq__answer" style="display:none;">Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam,
+                                eaque. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque laudantium, totam
+                                rem
+                                aperiam, eaque</div>
+                        </li>
+                        <li class="faq__item">
+                            <div class="faq__question">
+                                Frequently asked questions
+                                <span class="toggle-icon">
+                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="26"
+                                        viewBox="0 0 25 26" fill="none">
+                                        <path
+                                            d="M14.3789 0V11.1915H25V14.7298H14.3789V26H10.5689V14.7298H0V11.1915H10.5689V0H14.3789Z"
+                                            fill="#0E338B" />
+                                    </svg>
+                                    <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="4"
+                                        viewBox="0 0 25 4" fill="none" style="display: none;">
+                                        <path d="M25 0.230957H14.3789H0V3.76927H14.3789H25V0.230957Z" fill="#0E338B" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="faq__answer" style="display:none;">Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam,
+                                eaque. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque laudantium, totam
+                                rem
+                                aperiam, eaque</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="faq__right">
+                    <img loading="lazy" src="./img/faq-image.jpg" alt="photo">
+                </div>
+            </div>
+        </section>
+        <section class="order__section" id="order">
+            <div class="container">
+                <div class="order__container">
+                    <h3 class="order__title">Window Tinting<span> veritatis</span></h3>
+                    <p class="order__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    <form action="" class="order__form" id="oder__form">
+                        <input placeholder="Name" type="text" id="name" name="name" class="order__form-input" required>
+                        <input placeholder="Phone" type="tel" id="phone" name="phone" class="order__form-input"
+                            required>
+                        <input placeholder="Email" type="email" id="email" name="email" class="order__form-input"
+                            required>
+                        <button type="submit" class="order__form-button order__btn">Order</button>
+                    </form>
+                </div>
+            </div>
+            <div class="order__section_card">
+                <ul class="order__list">
+                    <li class="order__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="62" viewBox="0 0 61 62" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M27.7095 7.55957C35.0243 0.244762 46.8839 0.244765 54.1987 7.55957C61.5135 14.8744 61.5135 26.734 54.1987 34.0488L36.7241 51.5234C36.0805 52.1671 35.2074 52.5287 34.2971 52.5287L14.0836 52.5287L7.59984 59.0125C6.25943 60.3529 4.0862 60.3529 2.74579 59.0125C1.40538 57.6721 1.40538 55.4989 2.74579 54.1585L9.22959 47.6747L9.22958 27.4612C9.22958 26.5509 9.5912 25.6778 10.2349 25.0342L27.7095 7.55957ZM20.9483 45.664L32.8754 45.664L37.6605 40.879L25.9759 40.879C25.897 40.879 25.8188 40.8763 25.7413 40.8711L20.9483 45.664ZM32.598 34.0143L42.549 24.0633C43.8894 22.7229 43.8894 20.5497 42.549 19.2093C41.2086 17.8689 39.0354 17.8689 37.695 19.2093L16.0943 40.81L16.0943 28.8829L32.5635 12.4136C37.1975 7.77963 44.7107 7.77963 49.3447 12.4136C53.9787 17.0476 53.9787 24.5608 49.3447 29.1948L44.5172 34.0222C44.4397 34.017 44.3615 34.0143 44.2826 34.0143L32.598 34.0143Z"
+                                fill="white" stroke="#1947B4" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <h4 class="order__item_title">Safety</h4>
+                        <p class="order__item_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam,
+                            eaque</p>
+                    </li>
+                    <li class="order__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M35.6526 2.78158C39.3301 -0.927187 45.2925 -0.927196 48.97 2.78157L55.9562 9.82715C59.6337 13.5359 59.6337 19.549 55.9562 23.2578L48.2373 31.0423H50.5832C55.784 31.0423 60 35.2942 60 40.5392V50.5031C60 55.7481 55.784 60 50.5832 60H9.41681C4.21605 60 0 55.7481 0 50.5031V10.6473C0 5.40233 4.21605 1.15043 9.41681 1.15043H19.2967C24.2196 1.15043 28.2602 4.9601 28.6779 9.81558L35.6526 2.78158ZM28.7136 17.6033V42.659L51.9537 19.2212C53.4207 17.7418 53.4207 15.3431 51.9537 13.8637L44.9675 6.8181C43.5005 5.33865 41.1221 5.33865 39.6551 6.81811L29.5313 17.0281C29.2872 17.2742 29.0097 17.4659 28.7136 17.6033ZM28.7108 50.7348C28.6808 51.9968 28.4068 53.1977 27.9345 54.2915H50.5832C52.6578 54.2915 54.3396 52.5954 54.3396 50.5031V40.5392C54.3396 38.4469 52.6578 36.7508 50.5832 36.7508H42.5769L28.7108 50.7348ZM19.2967 54.2915C21.3714 54.2915 23.0532 52.5954 23.0532 50.5031V10.6473C23.0532 8.55505 21.3714 6.85894 19.2967 6.85894H9.41681C7.34219 6.85894 5.66038 8.55505 5.66038 10.6473V50.5031C5.66038 52.5954 7.34219 54.2915 9.41681 54.2915H19.2967ZM9.87993 47.1818C9.87993 45.6054 11.147 44.3275 12.7101 44.3275H16.0034C17.5665 44.3275 18.8336 45.6054 18.8336 47.1818C18.8336 48.7582 17.5665 50.0361 16.0034 50.0361H12.7101C11.147 50.0361 9.87993 48.7582 9.87993 47.1818Z"
+                                fill="#1947B4" />
+                        </svg>
+                        <h4 class="order__item_title">Big choice</h4>
+                        <p class="order__item_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam,
+                            eaque</p>
+                    </li>
+                    <li class="order__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.625 7.5C10.625 6.11929 11.7443 5 13.125 5H48.125C49.5057 5 50.625 6.11929 50.625 7.5C50.625 8.88071 49.5057 10 48.125 10H46.25V14.1181C46.25 16.4187 45.4567 18.649 44.0039 20.4329L36.8162 29.2586C36.3095 29.8808 36.3195 30.7357 36.8461 31.3482L43.8332 39.476C45.3925 41.29 46.25 43.6028 46.25 45.9949V50H48.125C49.5057 50 50.625 51.1193 50.625 52.5C50.625 53.8807 49.5057 55 48.125 55H13.125C11.7443 55 10.625 53.8807 10.625 52.5C10.625 51.1193 11.7443 50 13.125 50H15V45.9949C15 43.6028 15.8575 41.29 17.4168 39.476L24.4039 31.3482C24.9305 30.7357 24.9405 29.8808 24.4338 29.2586L17.2461 20.4329C15.7933 18.649 15 16.4187 15 14.1181V10H13.125C11.7443 10 10.625 8.88071 10.625 7.5ZM20 10V14.1181C20 15.2684 20.3966 16.3835 21.123 17.2755L28.3108 26.1012C30.3486 28.6035 30.2982 32.1616 28.1955 34.6076L21.2084 42.7354C20.4287 43.6424 20 44.7988 20 45.9949V50H41.25V45.9949C41.25 44.7988 40.8213 43.6424 40.0416 42.7354L33.0545 34.6076C30.9518 32.1616 30.9014 28.6035 32.9392 26.1012L40.127 17.2755C40.8534 16.3835 41.25 15.2684 41.25 14.1181V10H20Z"
+                                fill="white" />
+                        </svg>
+                        <h4 class="order__item_title">Car Tinting</h4>
+                        <p class="order__item_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam,
+                            eaque</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="f__left">
+                        <img loading="lazy" src="./img/logo_f.png" alt="photo">
+                    </div>
+                    <div class="f__center">
+                        <div class="f__center_left">
+                            <h3>Customer Service</h3>
+                            <ul class="center__left-list">
+                                <li class="center__left_item">
+                                    <a href="./about-us.html">About Us</a>
+                                </li>
+                                <li class="center__left_item">
+                                    <a href="#">My Account</a>
+                                </li>
+                                <li class="center__left_item">
+                                    <a href="#">Therms of Use</a>
+                                </li>
+                                <li class="center__left_item">
+                                    <a href="#">Refunds and Cancelation</a>
+                                </li>
+                                <li class="center__left_item">
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li class="center__left_item">
+                                    <a href="#">Therms of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="f__center_right">
+                            <h3>Contact Info</h3>
+                            <a href="https://maps.app.goo.gl/dixNuz5dcybtsiDQ9">Los Angeles, California</a>
+                            <a href="mailto:info@sun.guard.com">info@sun.guard.com</a>
+                        </div>
+                    </div>
+                    <div class="f__right">
+                        <ul class="f__social_list">
+                            <li class="f__social_item">
+                                <a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer"
+                                    class="twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21"
+                                        fill="none">
+                                        <path
+                                            d="M17.3246 0H20.6997L13.3281 8.49163L22 20.0483H15.2116L9.89092 13.0411L3.81008 20.0483H0.430248L8.31334 10.9639L0 0H6.96045L11.7649 6.40487L17.3246 0ZM16.1391 18.0146H18.0083L5.9422 1.92772H3.93438L16.1391 18.0146Z"
+                                            fill="#EBF0FF" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="f__social_item">
+                                <a href="https://www.instagram.com/ " target="_blank" rel="noopener noreferrer"
+                                    class="instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25"
+                                        fill="none">
+                                        <path
+                                            d="M11.5026 5.91225C8.23921 5.91225 5.60697 8.69034 5.60697 12.1345C5.60697 15.5787 8.23921 18.3568 11.5026 18.3568C14.7659 18.3568 17.3982 15.5787 17.3982 12.1345C17.3982 8.69034 14.7659 5.91225 11.5026 5.91225ZM11.5026 16.1798C9.3937 16.1798 7.66966 14.3657 7.66966 12.1345C7.66966 9.90338 9.38857 8.08923 11.5026 8.08923C13.6166 8.08923 15.3355 9.90338 15.3355 12.1345C15.3355 14.3657 13.6114 16.1798 11.5026 16.1798ZM19.0144 5.65772C19.0144 6.46461 18.3987 7.10905 17.6393 7.10905C16.8748 7.10905 16.2642 6.4592 16.2642 5.65772C16.2642 4.85625 16.8799 4.2064 17.6393 4.2064C18.3987 4.2064 19.0144 4.85625 19.0144 5.65772ZM22.9192 7.13071C22.832 5.18658 22.4112 3.46449 21.0617 2.04566C19.7174 0.626831 18.0857 0.182769 16.2437 0.0852923C14.3452 -0.0284308 8.65482 -0.0284308 6.75633 0.0852923C4.91941 0.177354 3.28773 0.621415 1.93826 2.04025C0.58879 3.45908 0.173173 5.18117 0.0808143 7.12529C-0.0269381 9.12898 -0.0269381 15.1346 0.0808143 17.1383C0.168042 19.0825 0.58879 20.8046 1.93826 22.2234C3.28773 23.6422 4.91428 24.0863 6.75633 24.1838C8.65482 24.2975 14.3452 24.2975 16.2437 24.1838C18.0857 24.0917 19.7174 23.6476 21.0617 22.2234C22.4061 20.8046 22.8268 19.0825 22.9192 17.1383C23.0269 15.1346 23.0269 9.1344 22.9192 7.13071ZM20.4665 19.2882C20.0663 20.3497 19.2915 21.1674 18.2807 21.5952C16.767 22.2288 13.1753 22.0826 11.5026 22.0826C9.82984 22.0826 6.23296 22.2234 4.72443 21.5952C3.71874 21.1728 2.94395 20.3551 2.53859 19.2882C1.93826 17.6907 2.0768 13.8999 2.0768 12.1345C2.0768 10.3691 1.94339 6.57292 2.53859 4.9808C2.93882 3.91938 3.71361 3.10166 4.72443 2.67385C6.23809 2.04025 9.82984 2.18646 11.5026 2.18646C13.1753 2.18646 16.7722 2.04566 18.2807 2.67385C19.2864 3.09625 20.0612 3.91397 20.4665 4.9808C21.0669 6.57834 20.9283 10.3691 20.9283 12.1345C20.9283 13.8999 21.0669 17.6961 20.4665 19.2882Z"
+                                            fill="#EBF0FF" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="f__social_item">
+                                <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"
+                                    rel="noopener noreferrer" class="facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                        fill="none">
+                                        <path
+                                            d="M19.6758 0.266994H4.49461C2.355 0.266994 0.614361 2.10368 0.614361 4.36133V20.3801C0.614361 22.6378 2.355 24.4745 4.49461 24.4745H19.6758C21.8154 24.4745 23.556 22.6378 23.556 20.3801V4.36133C23.556 2.10368 21.8154 0.266994 19.6758 0.266994ZM22.2065 20.3801C22.2065 21.8526 21.0713 23.0505 19.6758 23.0505H4.49461C3.09912 23.0505 1.96387 21.8526 1.96387 20.3801V4.36133C1.96387 2.88885 3.09912 1.69096 4.49461 1.69096H19.6758C21.0713 1.69096 22.2065 2.88885 22.2065 4.36133V20.3801Z"
+                                            fill="#EBF0FF" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.361328 4.36133C0.361328 1.95622 2.21526 0 4.49461 0H19.6758C21.9551 0 23.8091 1.95622 23.8091 4.36133V20.3801C23.8091 22.7852 21.9551 24.7415 19.6758 24.7415H4.49461C2.21526 24.7415 0.361328 22.7852 0.361328 20.3801V4.36133ZM4.49461 0.533989C2.49475 0.533989 0.867394 2.25113 0.867394 4.36133V20.3801C0.867394 22.4903 2.49475 24.2075 4.49461 24.2075H19.6758C21.6756 24.2075 23.303 22.4903 23.303 20.3801V4.36133C23.303 2.25113 21.6756 0.533989 19.6758 0.533989H4.49461ZM4.49461 1.95796C3.23887 1.95796 2.2169 3.03631 2.2169 4.36133V20.3801C2.2169 21.7052 3.23887 22.7835 4.49461 22.7835H19.6758C20.9315 22.7835 21.9535 21.7052 21.9535 20.3801V4.36133C21.9535 3.03631 20.9315 1.95796 19.6758 1.95796H4.49461ZM1.71084 4.36133C1.71084 2.7414 2.95938 1.42397 4.49461 1.42397H19.6758C21.211 1.42397 22.4595 2.7414 22.4595 4.36133V20.3801C22.4595 22.0001 21.211 23.3175 19.6758 23.3175H4.49461C2.95938 23.3175 1.71084 22.0001 1.71084 20.3801V4.36133Z"
+                                            fill="#EBF0FF" />
+                                        <path
+                                            d="M16.4414 3.2301H14.3785C11.5115 3.2301 9.17904 5.96468 9.17904 9.32602V9.89366H7.60026C7.2515 9.89366 6.96875 10.2252 6.96875 10.6341V13.5956C6.96875 14.0045 7.2515 14.336 7.60026 14.336H9.17904V20.2592C9.17904 20.6681 9.46179 20.9996 9.81055 20.9996H12.3366C12.6854 20.9996 12.9681 20.6681 12.9681 20.2592V14.336H15.1784C15.5272 14.336 15.8099 14.0045 15.8099 13.5956V10.6341C15.8099 10.2252 15.5272 9.89366 15.1784 9.89366H12.9681V9.32602C12.9681 8.41425 13.6008 7.67247 14.3785 7.67247H16.4414C16.7902 7.67247 17.0729 7.34097 17.0729 6.93208V3.9705C17.0729 3.5616 16.7902 3.2301 16.4414 3.2301ZM15.8099 6.19168H14.3785C12.9044 6.19168 11.7051 7.59774 11.7051 9.32602V10.6341C11.7051 11.0429 11.9878 11.3744 12.3366 11.3744H14.5469V12.8552H12.3366C11.9878 12.8552 11.7051 13.1867 11.7051 13.5956V19.5188H10.4421V13.5956C10.4421 13.1867 10.1593 12.8552 9.81055 12.8552H8.23177V11.3744H9.81055C10.1593 11.3744 10.4421 11.0429 10.4421 10.6341V9.32602C10.4421 6.78123 12.2079 4.71089 14.3785 4.71089H15.8099V6.19168Z"
+                                            fill="#EBF0FF" />
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__botom">
+            <div class="container">
+                <ul class="footer__private_list">
+                    <li class="footer__private_item">
+                        <a href="">Copyright (c) SunGuard</a>
+                    </li>
+                    <li class="footer__private_item">
+                        <a href="">All rights reserved</a>
+                    </li>
+                    <li class="footer__private_item">
+                        <a href="">info@sun.guard.com</a>
+                    </li>
+                    <li class="footer__private_item">
+                        <a href="">FAQ</a>
+                    </li>
+                    <li class="footer__private_item">
+                        <a href="">by LiddWeb</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
