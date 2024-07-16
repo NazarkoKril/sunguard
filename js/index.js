@@ -24,21 +24,46 @@ const swiper = new Swiper(".swiper__portf", {
     },
     slidesPerView: 3,
     spaceBetween: 0,
-    //   breakpoints: {
-    //     // when window width is >= 320px
-    //     320: {
-    //       slidesPerView: 2,
-    //       spaceBetween: 20
-    //     },
-    //     // when window width is >= 480px
-    //     480: {
-    //       slidesPerView: 3,
-    //       spaceBetween: 30
-    //     },
-    //     // when window width is >= 640px
-    //     640: {
-    //       slidesPerView: 4,
-    //       spaceBetween: 40
-    //     }
-    //   }
+    breakpoints: {
+
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        450: {
+            slidesPerView: 2,
+            spaceBetween: 0
+        },
+        700: {
+            slidesPerView: 3,
+            spaceBetween: 0
+        },
+        1050: {
+            slidesPerView: 2,
+            spaceBetween: 0
+        },
+
+
+
+        1350: {
+            slidesPerView: 3,
+            spaceBetween: 0
+        }
+    }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burgerIcon = document.querySelector('.burger__icon');
+    const burgerMenu = document.querySelector('.burger__menu');
+
+    burgerIcon.addEventListener('click', () => {
+        burgerIcon.classList.toggle('active');
+        burgerMenu.classList.toggle('active');
+        if (burgerMenu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+});
+
