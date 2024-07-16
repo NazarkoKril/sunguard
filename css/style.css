@@ -666,6 +666,10 @@ header {
   position: relative;
 }
 
+.container2 {
+  max-width: 100%;
+}
+
 .order__section .container {
   background-image: url(../img/order_sect.jpg);
   background-repeat: no-repeat;
