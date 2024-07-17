@@ -604,6 +604,9 @@ header {
 .order__section {
   position: relative;
 }
+.container2 {
+  max-width: 100%;
+}
 .order__section .container {
   background-image: url(../img/order_sect.jpg);
   background-repeat: no-repeat;
@@ -829,16 +832,7 @@ header {
   gap: 36px;
   transform: translateY(10px);
 }
-@media (max-width: 1273px) {
-  .f__right {
-    padding-left: 20px;
-  }
-}
-@media (max-width: 1100px) {
-  .f__right {
-    padding-left: 0px;
-  }
-}
+
 .footer__botom {
   background: #062776;
 }
@@ -864,6 +858,161 @@ header {
 }
 .serv__img1 {
   display: none;
+}
+
+// SERVICE INDEX  --------------------------------------------------------------------------------
+.services__hero_section {
+  background-image: url(../img/service__img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+.services__hero_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffffd8 100%
+  );
+  z-index: 1;
+}
+
+.about__hero_container {
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+  padding-bottom: 325px;
+}
+.about__hero_title {
+  color: #1947b4;
+  font-family: "Freeman";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 18px;
+  margin-top: 8px;
+}
+.about__hero_subtitle {
+  color: #0e338b;
+  font-family: "Lato";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 430px;
+}
+.nav__serv {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  a {
+    color: #0e338b;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: var(--trans);
+    &:hover {
+      color: #ffd874;
+    }
+  }
+}
+.services__card_section {
+  padding-bottom: 200px;
+}
+.container {
+}
+.services__card_list {
+  display: flex;
+  flex-direction: column;
+}
+.services__card_item {
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  border-bottom: 2px solid #ffd874;
+  justify-content: space-between;
+  svg {
+    width: 111px;
+    height: 183px;
+    margin-right: 41px;
+  }
+}
+.services__card_info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+
+  a {
+    color: #fff;
+    text-align: center;
+    font-family: "Freeman";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e338b;
+    width: 180px;
+    height: 53px;
+    transition: var(--trans);
+    position: relative;
+    margin-left: 0;
+  }
+}
+.services__info_title {
+  color: #0e338b;
+  font-family: "Freeman";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.services__info_subtitle {
+  color: #0e338b;
+  font-family: "Lato";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 430px;
+  margin-right: 117px;
+}
+
+.services__card_img {
+  display: block;
+  img {
+    width: 100%;
+  }
+}
+// ADPTIVE  --------------------------------------------------------------------------------
+
+@media (max-width: 1273px) {
+  .f__right {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .f__right {
+    padding-left: 0px;
+  }
 }
 @media (max-width: 1100px) {
   .serv__card_item {
@@ -1003,6 +1152,19 @@ header {
   .footer__private_item a {
     font-size: 12px;
   }
+  .services__card_item {
+    flex-direction: column;
+    align-items: start;
+  }
+  .services__card_info {
+    margin-bottom: 40px;
+  }
+  .services__card_img {
+    width: 100%;
+  }
+  .services__card_section {
+    padding-bottom: 0px;
+  }
 }
 @media (max-width: 600px) {
   .hero__section {
@@ -1106,5 +1268,24 @@ header {
 
   .center__left-list {
     grid-template-columns: 1fr;
+  }
+  .about__hero_title {
+    font-size: 40px;
+  }
+  @media (max-width: 500px) {
+    .services__hero_section {
+      background-image: url(../img/service__img2.jpg);
+    }
+  }
+  .services__card_item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .services__info_title {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  .services__card_img img {
+    height: 250px;
   }
 }
