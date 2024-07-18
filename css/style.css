@@ -1280,7 +1280,6 @@ header {
 
 .blog__card_img {
   width: 100%;
-  height: 460px;
   margin-bottom: 25px;
 }
 .blog__card_img img {
@@ -1292,6 +1291,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  gap: 50px;
 }
 
 .text__left {
