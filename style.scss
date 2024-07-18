@@ -1104,6 +1104,106 @@ header {
   max-width: 250px;
 }
 
+// BLOG  --------------------------------------------------------------------------------
+.blog__section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.blog__title {
+  color: #1947b4;
+  font-family: "Freeman";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 80px;
+}
+.blog__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+  gap: 12px;
+}
+.blog__img {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  img {
+    width: 100%;
+  }
+}
+.blog__info_title {
+  color: #0e338b;
+  font-family: "Freeman";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+}
+.blog__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    color: #0e338b;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: var(--trans);
+    &:hover {
+      color: #ffd874;
+    }
+  }
+}
+.blog__date {
+  color: #0e338b;
+  font-family: "Lato";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.blog__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  height: 20px;
+  align-items: center;
+  span {
+    color: #0e338b;
+    font-family: "Freeman";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+}
+.blog__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog__pagination .active {
+  font-weight: bold;
+}
+.blog__pagination .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
 // ADPTIVE  --------------------------------------------------------------------------------
 
 @media (max-width: 1273px) {
