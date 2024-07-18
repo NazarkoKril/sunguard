@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Freeman&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>SunGuard</title>
 </head>
 
@@ -23,16 +24,16 @@
                 <nav class="h__center">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="./index.html" class="header__link">Home</a>
+                            <a href="./index.html" class="header__link ">Home</a>
                         </li>
                         <li class="header__item">
-                            <a href="./about-us.html" class="header__link">About us</a>
+                            <a href="./about-us.html" class="header__link ">About us</a>
                         </li>
                         <li class="header__item">
-                            <a href="./services.html" class="header__link">Services</a>
+                            <a href="./services.html" class="header__link ">Services</a>
                         </li>
                         <li class="header__item">
-                            <a href="./blog.html" class="header__link">Blog</a>
+                            <a href="./blog.html active__color" class="header__link">Blog</a>
                         </li>
                     </ul>
                 </nav>
@@ -77,202 +78,318 @@
                         </li>
                     </ul>
                 </div>
+                <div class="burger">
+                    <div class="burger__icon">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <div class="burger__menu">
+                        <div class="container">
+                            <ul class="burger__list">
+                                <li class="burger__item">
+                                    <a href="./index.html" class="burger__link ">Home</a>
+                                </li>
+                                <li class="burger__item">
+                                    <a href="./about-us.html" class="burger__link ">About us</a>
+                                </li>
+                                <li class="burger__item">
+                                    <a href="./services.html" class="burger__link ">Services</a>
+                                </li>
+                                <li class="burger__item">
+                                    <a href="./blog.html" class="burger__link active__color">Blog</a>
+                                </li>
+                            </ul>
+                            <ul class="h__social_list">
+                                <li class="h__social_item">
+                                    <a href="https://x.com/?lang=uk" target="_blank" rel="noopener noreferrer"
+                                        class="twitter">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21"
+                                            viewBox="0 0 22 21" fill="none">
+                                            <path
+                                                d="M17.3246 0H20.6997L13.3281 8.49163L22 20.0483H15.2116L9.89092 13.0411L3.81008 20.0483H0.430248L8.31334 10.9639L0 0H6.96045L11.7649 6.40487L17.3246 0ZM16.1391 18.0146H18.0083L5.9422 1.92772H3.93438L16.1391 18.0146Z"
+                                                fill="#051e5a" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="h__social_item">
+                                    <a href="https://www.instagram.com/ " target="_blank" rel="noopener noreferrer"
+                                        class="instagram">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25"
+                                            viewBox="0 0 23 25" fill="none">
+                                            <path
+                                                d="M11.5026 5.91225C8.23921 5.91225 5.60697 8.69034 5.60697 12.1345C5.60697 15.5787 8.23921 18.3568 11.5026 18.3568C14.7659 18.3568 17.3982 15.5787 17.3982 12.1345C17.3982 8.69034 14.7659 5.91225 11.5026 5.91225ZM11.5026 16.1798C9.3937 16.1798 7.66966 14.3657 7.66966 12.1345C7.66966 9.90338 9.38857 8.08923 11.5026 8.08923C13.6166 8.08923 15.3355 9.90338 15.3355 12.1345C15.3355 14.3657 13.6114 16.1798 11.5026 16.1798ZM19.0144 5.65772C19.0144 6.46461 18.3987 7.10905 17.6393 7.10905C16.8748 7.10905 16.2642 6.4592 16.2642 5.65772C16.2642 4.85625 16.8799 4.2064 17.6393 4.2064C18.3987 4.2064 19.0144 4.85625 19.0144 5.65772ZM22.9192 7.13071C22.832 5.18658 22.4112 3.46449 21.0617 2.04566C19.7174 0.626831 18.0857 0.182769 16.2437 0.0852923C14.3452 -0.0284308 8.65482 -0.0284308 6.75633 0.0852923C4.91941 0.177354 3.28773 0.621415 1.93826 2.04025C0.58879 3.45908 0.173173 5.18117 0.0808143 7.12529C-0.0269381 9.12898 -0.0269381 15.1346 0.0808143 17.1383C0.168042 19.0825 0.58879 20.8046 1.93826 22.2234C3.28773 23.6422 4.91428 24.0863 6.75633 24.1838C8.65482 24.2975 14.3452 24.2975 16.2437 24.1838C18.0857 24.0917 19.7174 23.6476 21.0617 22.2234C22.4061 20.8046 22.8268 19.0825 22.9192 17.1383C23.0269 15.1346 23.0269 9.1344 22.9192 7.13071ZM20.4665 19.2882C20.0663 20.3497 19.2915 21.1674 18.2807 21.5952C16.767 22.2288 13.1753 22.0826 11.5026 22.0826C9.82984 22.0826 6.23296 22.2234 4.72443 21.5952C3.71874 21.1728 2.94395 20.3551 2.53859 19.2882C1.93826 17.6907 2.0768 13.8999 2.0768 12.1345C2.0768 10.3691 1.94339 6.57292 2.53859 4.9808C2.93882 3.91938 3.71361 3.10166 4.72443 2.67385C6.23809 2.04025 9.82984 2.18646 11.5026 2.18646C13.1753 2.18646 16.7722 2.04566 18.2807 2.67385C19.2864 3.09625 20.0612 3.91397 20.4665 4.9808C21.0669 6.57834 20.9283 10.3691 20.9283 12.1345C20.9283 13.8999 21.0669 17.6961 20.4665 19.2882Z"
+                                                fill="#051e5a" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="h__social_item">
+                                    <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"
+                                        rel="noopener noreferrer" class="facebook">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                            viewBox="0 0 24 25" fill="none">
+                                            <path
+                                                d="M19.6758 0.266994H4.49461C2.355 0.266994 0.614361 2.10368 0.614361 4.36133V20.3801C0.614361 22.6378 2.355 24.4745 4.49461 24.4745H19.6758C21.8154 24.4745 23.556 22.6378 23.556 20.3801V4.36133C23.556 2.10368 21.8154 0.266994 19.6758 0.266994ZM22.2065 20.3801C22.2065 21.8526 21.0713 23.0505 19.6758 23.0505H4.49461C3.09912 23.0505 1.96387 21.8526 1.96387 20.3801V4.36133C1.96387 2.88885 3.09912 1.69096 4.49461 1.69096H19.6758C21.0713 1.69096 22.2065 2.88885 22.2065 4.36133V20.3801Z"
+                                                fill="#051e5a" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.361328 4.36133C0.361328 1.95622 2.21526 0 4.49461 0H19.6758C21.9551 0 23.8091 1.95622 23.8091 4.36133V20.3801C23.8091 22.7852 21.9551 24.7415 19.6758 24.7415H4.49461C2.21526 24.7415 0.361328 22.7852 0.361328 20.3801V4.36133ZM4.49461 0.533989C2.49475 0.533989 0.867394 2.25113 0.867394 4.36133V20.3801C0.867394 22.4903 2.49475 24.2075 4.49461 24.2075H19.6758C21.6756 24.2075 23.303 22.4903 23.303 20.3801V4.36133C23.303 2.25113 21.6756 0.533989 19.6758 0.533989H4.49461ZM4.49461 1.95796C3.23887 1.95796 2.2169 3.03631 2.2169 4.36133V20.3801C2.2169 21.7052 3.23887 22.7835 4.49461 22.7835H19.6758C20.9315 22.7835 21.9535 21.7052 21.9535 20.3801V4.36133C21.9535 3.03631 20.9315 1.95796 19.6758 1.95796H4.49461ZM1.71084 4.36133C1.71084 2.7414 2.95938 1.42397 4.49461 1.42397H19.6758C21.211 1.42397 22.4595 2.7414 22.4595 4.36133V20.3801C22.4595 22.0001 21.211 23.3175 19.6758 23.3175H4.49461C2.95938 23.3175 1.71084 22.0001 1.71084 20.3801V4.36133Z"
+                                                fill="#051e5a" />
+                                            <path
+                                                d="M16.4414 3.2301H14.3785C11.5115 3.2301 9.17904 5.96468 9.17904 9.32602V9.89366H7.60026C7.2515 9.89366 6.96875 10.2252 6.96875 10.6341V13.5956C6.96875 14.0045 7.2515 14.336 7.60026 14.336H9.17904V20.2592C9.17904 20.6681 9.46179 20.9996 9.81055 20.9996H12.3366C12.6854 20.9996 12.9681 20.6681 12.9681 20.2592V14.336H15.1784C15.5272 14.336 15.8099 14.0045 15.8099 13.5956V10.6341C15.8099 10.2252 15.5272 9.89366 15.1784 9.89366H12.9681V9.32602C12.9681 8.41425 13.6008 7.67247 14.3785 7.67247H16.4414C16.7902 7.67247 17.0729 7.34097 17.0729 6.93208V3.9705C17.0729 3.5616 16.7902 3.2301 16.4414 3.2301ZM15.8099 6.19168H14.3785C12.9044 6.19168 11.7051 7.59774 11.7051 9.32602V10.6341C11.7051 11.0429 11.9878 11.3744 12.3366 11.3744H14.5469V12.8552H12.3366C11.9878 12.8552 11.7051 13.1867 11.7051 13.5956V19.5188H10.4421V13.5956C10.4421 13.1867 10.1593 12.8552 9.81055 12.8552H8.23177V11.3744H9.81055C10.1593 11.3744 10.4421 11.0429 10.4421 10.6341V9.32602C10.4421 6.78123 12.2079 4.71089 14.3785 4.71089H15.8099V6.19168Z"
+                                                fill="#051e5a" />
+                                        </svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="container">
-            <h2 class="blog__title">Blog</h2>
-            <ul class="blog__list">
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-                <li class="blog__item">
-                    <div class="blog__img">
-                        <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
-                    </div>
-                    <p class="blog__info_title"></p>
-                    <div class="blog__info">
-                        <p class="blog__date">16/06/2024</p>
-                        <a href="./blog-card">Read more...</a>
-                    </div>
-                </li>
-            </ul>
-            <div class="blog__pagination">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="17" viewBox="0 0 8 17" fill="none">
-                        <path d="M7 15.75L1 8.75L7 1.25" stroke="#0E338B" stroke-width="2" stroke-linejoin="round" />
+
+        <div class="container ">
+            <div class="blog__section">
+                <div class="nav__serv">
+                    <a href="./index.html">Home</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="15" viewBox="0 0 7 15" fill="none">
+                        <path d="M1 1.5L6 7.2931L0.999999 13.5" stroke="#1947B4" stroke-width="2"
+                            stroke-linejoin="round" />
                     </svg>
-                </span>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>...</span>
-                <span>8</span>
-                <span>9</span>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="17" viewBox="0 0 8 17" fill="none">
-                        <path d="M1 1.25L7 8.25L1 15.75" stroke="#0E338B" stroke-width="2" stroke-linejoin="round" />
-                    </svg>
-                </span>
+                    <a href="./services.html">Services</a>
+                </div>
+                <h2 class="blog__title">Blog</h2>
+                <div class="blog__swiper">
+                    <ul class="blog__list">
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                        <li class="blog__item">
+                            <div class="blog__img">
+                                <img src="./img/blog_img.jpg" alt="photo" loading="lazy">
+                            </div>
+                            <p class="blog__info_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                adipiscing
+                            </p>
+                            <div class="blog__info">
+                                <p class="blog__date">16/06/2024</p>
+                                <a href="./blog-card">Read more...</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="blog__pagination">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="17" viewBox="0 0 8 17"
+                                fill="none">
+                                <path d="M7 15.75L1 8.75L7 1.25" stroke="#0E338B" stroke-width="2"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>...</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="17" viewBox="0 0 8 17"
+                                fill="none">
+                                <path d="M1 1.25L7 8.25L1 15.75" stroke="#0E338B" stroke-width="2"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -359,7 +476,7 @@
             </div>
         </div>
         <div class="footer__botom">
-            <div class="container__home">
+            <div class="container">
                 <ul class="footer__private_list">
                     <li class="footer__private_item">
                         <a href="">Copyright (c) SunGuard</a>
@@ -381,6 +498,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
