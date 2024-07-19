@@ -690,17 +690,18 @@ header {
   margin-top: 66px;
   border: none;
 }
-
-.order__list {
+.order__section_card {
   position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  justify-content: center;
   top: -157px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
+}
+.order__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
 }
 .order__item {
   padding: 21px 25px;
