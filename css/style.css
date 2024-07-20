@@ -1511,10 +1511,12 @@ header {
   .faq__section {
     padding-bottom: 60px;
   }
-  .order__list {
+  .order__section_card {
     position: relative;
-    flex-direction: column;
     top: 45px;
+  }
+  .order__list {
+    flex-direction: column;
   }
   .order__section {
     display: flex;
@@ -1611,6 +1613,7 @@ header {
   .hero__section {
     padding-bottom: 300px;
     height: auto;
+    background-position: 60%;
   }
   .about__img_title {
     font-size: 16px;
