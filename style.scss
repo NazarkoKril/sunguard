@@ -603,6 +603,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  position: relative;
 }
 .toggle-icon {
   display: flex;
@@ -642,17 +643,6 @@ header {
   flex-direction: column;
   gap: 27px;
 }
-@media (max-width: 1377px) {
-  .faq__title {
-    margin-bottom: 80px;
-  }
-  .faq__list {
-    gap: 22px;
-  }
-  .faq__question {
-    font-size: 20px;
-  }
-}
 
 .faq__answer {
   background: #fbfbfb;
@@ -666,6 +656,61 @@ header {
   line-height: normal;
   padding: 24px 30px;
 }
+@keyframes rotate-in {
+  0% {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-out {
+  0% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+.rotate-in {
+  animation: rotate-in 0.5s forwards;
+}
+
+.rotate-out {
+  animation: rotate-out 053s forwards;
+}
+.plus-icon,
+.minus-icon {
+  transition: opacity 0.5s, transform 0.5s;
+  position: absolute;
+  right: 15px;
+}
+
+.plus-icon {
+  opacity: 1;
+}
+
+.minus-icon {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.faq__item.active .plus-icon {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+.faq__item.active .minus-icon {
+  opacity: 1;
+  transform: rotate(0);
+}
+
 // order__section  --------------------------------------------------------------------------------
 .order__section {
   position: relative;
@@ -1319,7 +1364,17 @@ header {
   line-height: normal;
 }
 // ADPTIVE  --------------------------------------------------------------------------------
-
+@media (max-width: 1377px) {
+  .faq__title {
+    margin-bottom: 80px;
+  }
+  .faq__list {
+    gap: 22px;
+  }
+  .faq__question {
+    font-size: 20px;
+  }
+}
 @media (max-width: 1273px) {
   .f__right {
     padding-left: 20px;
@@ -1575,6 +1630,10 @@ header {
   }
 }
 @media (max-width: 500px) {
+  .minus-icon,
+  .plus-icon {
+    width: 20px;
+  }
   .hero__container {
     padding-top: 53px;
   }

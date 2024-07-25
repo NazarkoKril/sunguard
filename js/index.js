@@ -1,18 +1,15 @@
 $(document).ready(function () {
     $(".faq__question").click(function () {
+        var parentItem = $(this).parent(".faq__item");
         var answer = $(this).next(".faq__answer");
-        var plusIcon = $(this).find(".plus-icon");
-        var minusIcon = $(this).find(".minus-icon");
 
-        $(".faq__answer").not(answer).slideUp("slow");
-        $(".plus-icon").not(plusIcon).show();
-        $(".minus-icon").not(minusIcon).hide();
+        if (!parentItem.hasClass("active")) {
+            $(".faq__item.active .faq__answer").slideUp("slow");
+            $(".faq__item.active").removeClass("active");
+        }
 
-
-        answer.slideToggle("slow", function () {
-            plusIcon.toggle();
-            minusIcon.toggle();
-        });
+        parentItem.toggleClass("active");
+        answer.slideToggle("slow");
     });
 });
 
